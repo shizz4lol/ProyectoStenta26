@@ -21,7 +21,7 @@ $stmt->execute();
 $temp_MINIMA = $stmt->fetch(PDO::FETCH_ASSOC);
 
 // sql para registrar la temperatura
-$sql = "INSERT INTO temperatura(temp, id_camara) VALUES ($temp_a_registrar, $id_camara_a_registrar)";
+$sql = "INSERT INTO temperatura(fecha, temp, id_camara) VALUES (NOW(), $temp_a_registrar, $id_camara_a_registrar)";
 $stmt = $db->prepare($sql);
 $stmt->execute();
 
