@@ -1,0 +1,96 @@
+*{
+    padding:0;
+    margin:0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+a{
+    text-decoration: none;
+    color:inherit
+}
+nav, footer{
+    height:90px;
+    width: 100%;
+    background-color: #81afc6;
+    display: flex;
+    align-items:center;
+    color:white;
+}
+nav{
+    justify-content: space-between;
+}
+footer{
+    justify-content: center;
+}
+#icon img{
+    height:70px;
+    width: 70px;
+}
+nav .sec-link{
+    display:inline-flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right:10px;
+}
+.header-link{
+    margin:5px;
+    padding:8px;
+}
+.header-link:hover{
+    background-color: #487f9b;
+    border-radius: 20px;
+}
+section{
+    height:100%;
+}
+section .content{
+    display: flex;
+    justify-content:space-evenly;
+    width: 100%;
+    margin: 20px;
+}
+.cam-div{
+    margin: 20px;
+    flex-direction: column;
+    height: 200px;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cam-div h1{
+    font-weight: bold;
+    font-size: 30px;
+    color:#333333;
+    margin-bottom: 30px;
+}
+.cam-div p{
+    font-size: 90px;
+    font-weight:bolder;
+}
+.cam-div:hover{
+    background-color: #9fb8a5;
+    border-radius: 50px;
+}
+
+#his{
+    display: flex;
+    flex-direction:row;
+}
+#month{
+    color: #487f9b;
+    text-decoration: underline;
+}
+#his-cont h2{
+    font-size: 100px;
+    font-weight:bolder;
+    margin:20px;
+}
+#his-cont{
+    flex-direction: column;
+    align-items: center;
+}
+#status{
+    font-size: 20px;
+    text-decoration: double;
+    color: #333;
+}
