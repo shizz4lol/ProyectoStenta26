@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" type="text/css" href="style.css"></link>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header>
@@ -20,18 +21,27 @@
     </header>
     <section>
         <div id="his">
-            <div class="content" id="his-cont">
+            <div class="content" id="his-1">
                 <h1>TEMPERATURA ACTUAL</h1>
-                <h2>?°C</h2>
+                    <h2>?°C</h2>
                 <p id="status" ><!-- <?php= $respuesta_final?> --> La temperatura es</p>
             </div>
-            <div class="content">
-                <h1 id="month">Historial Mensual</h1>
+            <div class="content" id="his-2">
+                <h1 id="month">Historial Mensual</h1><br>
+                <canvas id="temp"></canvas>
             </div>
         </div>
     </section>
     <footer>
         <h3>STENTITOS</h3>
     </footer>
+    <script>
+
+        window.tempData = {
+           /*  temperaturas:
+                <?php echo json_encode($temperaturas); ?> */
+        };
+    </script>
+    <script src="grafico.js"></script>
 </body>
 </html>
