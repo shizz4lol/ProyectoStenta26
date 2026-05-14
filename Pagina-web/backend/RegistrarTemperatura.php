@@ -6,7 +6,7 @@ require_once 'Database.php'; //Incluye la clase 'Database'
 $database = new Database();
 $db = $database->getConnection();
 
-$temp_a_registrar = $_POST['temperatura'];
+$temp_a_registrar = $_POST['valor'];
 $id_camara_a_registrar = $_POST['id_camara'];
 
 // sql para obtener los limites de temperaturas
@@ -21,7 +21,7 @@ $stmt->execute();
 $temp_MINIMA = $stmt->fetch(PDO::FETCH_ASSOC);
 
 // sql para registrar la temperatura
-$sql = "INSERT INTO temperatura(fecha, temp, id_camara) VALUES (NOW(), $temp_a_registrar, $id_camara_a_registrar)";
+$sql = "INSERT INTO temperatura(fecha, valor, id_camara) VALUES (NOW(), $temp_a_registrar, $id_camara_a_registrar)";
 $stmt = $db->prepare($sql);
 $stmt->execute();
 
