@@ -1,11 +1,13 @@
 <?php
 
+include 'conexion.php';
+
 class Database
 {
-    private $host = "localhost";
-    private $db_name = "mi_base";
-    private $username = "usuario";
-    private $password = "password";
+    private $host = "sql111.infinityfree.com";
+    private $db_name = "if0_41919908_sensores";
+    private $username = "if0_41919908";
+    private $password = "4TS1CPgAPkQAJ";
     private $conn;
 
     public function getConnection()

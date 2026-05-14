@@ -1,6 +1,7 @@
 <?php
 
 require_once 'Database.php'; //Incluye la clase 'Database'
+include 'conexion.php';
 
 // Crea objeto
 $database = new Database();
@@ -35,6 +36,6 @@ if ($temp_a_registrar > $temp_MAXIMA) {
     $respuesta_final = "Temperatura normal";
 }
 
-echo $respuesta_final;
+echo json_encode($respuesta_final);
 
 ?>
